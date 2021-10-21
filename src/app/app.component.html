@@ -22,6 +22,7 @@
           *ngFor="let artist of artist;"
           (click)="showArtist(artist)">
               <div class="media">
+                <img class = "mr-3 rounded align-self-center image-fluid" style= "width: 70px;"src = "" alt = "">
                 <div class="media-body align-self-center">
                   <h5 class="m-0">{{artist.name}}</h5>
                   {{artist.reknown}}
