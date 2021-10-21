@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  query!: string;
-  artist!: object
+  query!: string
+  artist: any
 
   constructor(){
     this.query = "Barot"
