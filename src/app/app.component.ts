@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   query!: string;
+  artist!: object
 
   constructor(){
     this.query = "Barot"
