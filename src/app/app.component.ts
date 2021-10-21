@@ -18,7 +18,6 @@ export class AppComponent implements OnInit{
 
   constructor(private http:HttpClient){
     this.query = ""
-    this.artist = []; 
     
   }
 ngOnInit(): void{
