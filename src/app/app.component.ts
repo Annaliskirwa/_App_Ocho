@@ -9,6 +9,10 @@ export class AppComponent {
   query!: string
   artist: any
 
+  showArtist(e:any){
+    console.log(e)
+  }
+
   constructor(){
     this.query = "Barot"
     this.artist = 
