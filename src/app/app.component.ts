@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   query!: string
   artist: any
 
@@ -15,8 +16,14 @@ export class AppComponent {
     item.highlight = !item.highlight
   }
 
-  constructor(){
+  constructor(private http:HttpClient){
     this.query = ""
     this.artist = []; 
     
-  }}
+  }
+ngOnInit(): void{
+  this.http.get<Object>('../assets/data.json').subscribe(data => {
+    this.artist = data
+  })
+}
+}
