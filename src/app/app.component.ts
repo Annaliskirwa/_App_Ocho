@@ -9,8 +9,8 @@ export class AppComponent {
   query!: string
   artist: any
 
-  showArtist(e:any, item:any){
-    console.log(e)
+  showArtist(item:any){
+    
     this.query = item.name;
   }
 
