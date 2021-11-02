@@ -16,9 +16,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   query: string;
-  artists!: object;
+  artists: object;
 
-  showArtist(item:any) {
+  showArtist(item) {
     this.query = item.name;
     item.highlight = !item.highlight;
   }
