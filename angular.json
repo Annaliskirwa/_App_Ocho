@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "e0903aad-21fd-4d9e-b7de-ffd5c5ffca42"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ArtistAngular": {
+    "Artist-Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ArtistAngular",
+            "outputPath": "dist/Artist-Angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ArtistAngular:build:production"
+              "browserTarget": "Artist-Angular:build:production"
             },
             "development": {
-              "browserTarget": "ArtistAngular:build:development"
+              "browserTarget": "Artist-Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ArtistAngular:build"
+            "browserTarget": "Artist-Angular:build"
           }
         },
         "test": {
@@ -102,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "ArtistAngular"
+  "defaultProject": "Artist-Angular"
 }
