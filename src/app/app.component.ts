@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
 
   constructor(private http: HttpClient){
     this.query = ""
+
     
   }
   ngOnInit(): void{
