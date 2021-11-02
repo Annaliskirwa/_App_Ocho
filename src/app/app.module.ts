@@ -5,14 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ArtistItemsComponent } from './artist-items/artist-items.component';
-import { SearchArtistPipe } from './search-artist.pipe';
+import { SearchArtistsPipe } from './search-artists.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ArtistItemsComponent,
-    SearchArtistPipe
+    SearchArtistsPipe
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
